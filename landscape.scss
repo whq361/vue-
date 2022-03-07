@@ -1,0 +1,320 @@
+/* 横屏 */
+@media screen and(orientation: landscape) {
+    .page-showDetail-main {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url('~@/assets/images/musicalInstrument/musicalInstrument-bg.png')
+        no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .actionFace-container {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      .action-mask {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .selectMusic-contaner {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+
+        .swiper-container {
+          width: 100%;
+          height: 196px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+
+        .swiper-slide {
+          width: 80px;
+          height: 196px;
+          text-align: center;
+          font-size: 15px;
+          background: #fff;
+          border-radius: 20px;
+          overflow: hidden;
+          
+          display: flex;
+          flex-direction: column;
+
+          .main-img {
+            width: 100%;
+          }
+          .title {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .selectMusic-content {
+          position: relative;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .music-back {
+          width: 82px;
+          height: 36px;
+          background: rgba(255, 255, 255, 0.29);
+          border-radius: 40px;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 15px;
+          right: 20px;
+          z-index: 99;
+        }
+      }
+      .select-action-app {
+        width: 82px;
+        height: 36px;
+        background: #bb7dff;
+        border-radius: 40px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 7px;
+        right: 120px;
+      }
+      .select-action {
+        width: 82px;
+        height: 36px;
+        background: #bb7dff;
+        border-radius: 40px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 7px;
+        right: 20px;
+      }
+      .select-action-1-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3e4147;
+        position: fixed;
+        left: 20px;
+        bottom: 80px;
+
+        .select-action-1 {
+          width: 36px;
+          height: 36px;
+          margin-bottom: 8px;
+        }
+      }
+      .select-action-2-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3e4147;
+        position: fixed;
+        left: 20px;
+        bottom: 12px;
+
+        .select-action-2 {
+          width: 36px;
+          height: 36px;
+          margin-bottom: 8px;
+        }
+      }
+      .select-action-3-container {
+        width: 82px;
+        height: 36px;
+        background: rgba(0, 0, 0, 0.06);
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 117px;
+        bottom: 12px;
+        font-size: 14px;
+        .select-action-3 {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+      }
+      .select-action-4-container {
+        width: 82px;
+        height: 36px;
+        background: rgba(0, 0, 0, 0.06);
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 20px;
+        bottom: 12px;
+        font-size: 14px;
+        .select-action-4 {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+      }
+      .coverImage {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 40;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+      }
+      .routeImages {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 40;
+        margin: auto;
+      }
+      .popup {
+        width: 50%;
+        height: 100%;
+        border-radius: 0 !important;
+        .poup-main {
+          padding: 20px;
+          .title {
+            font-size: 18px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #3e4147;
+            background: url('~@/assets/images/musicalInstrument/musicalInstrument-text.png')
+              no-repeat;
+            background-size: 36px 8px;
+            background-position: left bottom;
+          }
+          .content {
+            margin-top: 40px;
+            font-size: 15px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #63656a;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            line-height: 25px;
+          }
+          .item-content {
+            margin-top: 40px;
+            width: 100%;
+            .item {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              margin-bottom: 21px;
+              width: 100%;
+              .left {
+                font-size: 14px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #63656a;
+              }
+              .right {
+                font-size: 18px;
+                font-family: DINAlternate-Bold, DINAlternate;
+                font-weight: bold;
+                color: #3e4147;
+              }
+            }
+          }
+        }
+      }
+      .color-select-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width:250px;
+        left: 0;
+        right: 0;
+        bottom: 12px;
+        margin: 0 auto;
+        .item {
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+        }
+        .item-active {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: rgba(0, 0, 0, 0.08);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 16px;
+        }
+        .item-unactive {
+          // border: 1px solid black;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
